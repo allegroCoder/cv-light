@@ -1,0 +1,177 @@
+%\cvsection{Publications}
+\centering{\color{awesome-darknight}\textbf{\large{Research 
+publications}} 
+({\color{myblue}\href{https://github.com/allegroCoder/my-papers}{link}})}\vspace{-3mm}
+\rule{\textwidth}{0.5pt}\vspace{-1mm}
+
+\begin{cventries}
+\vspace{-4mm}
+%------------------------------------------------
+
+\cventry
+{} % Degree
+{} % Institution
+{} % Location
+{} % Date(s)
+{ % Description(s) bullet points
+\begin{cvitems}
+\item{\textbf{``Efficient Composition of Scenario-based Hardware 
+Specifications''}, 
+\textit{IET CDT} journal, 2018. [\textbf{F}irst \textbf{A}uthor]}
+\item{\textbf{``A Heuristic Algorithm for Deriving Compact Models of Processor 
+Instruction Sets''}, \textit{ACSD} conference, 2015. 
+[\textbf{F.}\textbf{A.}]\newline}
+\textbf{Domains:} EDA, high-level synthesis, reconfigurable 
+computing, formal modelling.\newline
+\textbf{Summary:} Complex hardware systems can be designed by breaking down
+their behaviour into high-level descriptions of constituent scenarios, and then
+composing these scenarios into an efficient hardware implementation using a form
+of high-level synthesis. We propose a new algorithm for composition of
+scenarios. Unlike previously published methods, the proposed algorithm supports
+composition constraints, which allow the designer to restrict certain aspects of
+the composition in order to reuse legacy IP. Furthermore, our implementation is
+more scalable and can cope with specifications comprising hundreds of scenarios
+at the cost of $\simeq$5\% of area overhead compared to exact (and slow) 
+solutions, which cannot always be applied. The proposed algorithm is 
+implemented in an open-source EDA tool and compared to existing behavioural 
+synthesis techniques.
+\end{cvitems}
+}
+
+%------------------------------------------------
+\vspace{-1mm}\rule{8cm}{0.5pt}\vspace{-3mm}
+\cventry
+{}
+{}
+{}
+{}
+{
+\begin{cvitems}
+\item{\textbf{``Design and Implementation of Reconfigurable Asynchronous 
+Pipelines''}, to be submitted to the \textit{IEEE TCAD} journal. 
+[\textbf{F.}\textbf{A.}]}
+\item{\textbf{``Reconfigurable Asynchronous Pipelines: From Formal Models to 
+Silicon''}, \textit{DATE} conference, 2018.\newline}
+\item{\textbf{``Prototyping Resilient Processing Cores in Workcraft''}, 
+\textit{Resiliency in Embedded Electronic Systems} workshop, 2017.\newline}
+\textbf{Domains:} EDA, asynchronous design, low-power and resilient computing, 
+formal modelling.\newline
+\textbf{Summary:} Pipelining is a widely used approach for designing
+high-throughput computation systems. Pipelines are often designed to be
+dynamically reconfigurable to process data items differently depending on their
+content and/or to adjust to the application requirements in runtime. While
+reconfigurable synchronous pipelines are the de facto standard in industry and
+are well supported by EDA tools, reconfigurable asynchronous pipelines have
+neither a formal behavioural model nor mature automation support. Thus, we
+present a model and open-source EDA tool for the design and verification of 
+reconfigurable asynchronous pipelines. We validate the presented approach by
+designing and fabricating a test ASIC (TSMC 90nm), that demonstrates the
+benefits and costs of dynamic reconfigurability, as well as highlights the
+resilience of such pipelines.
+\end{cvitems}
+}
+
+%------------------------------------------------
+\rule{8cm}{0.5pt}\vspace{-3mm}
+\cventry
+{}
+{}
+{}
+{}
+{
+\begin{cvitems}
+\item{\textbf{``Language and Hardware Acceleration Backend for Graph 
+Processing''}, published in the \textit{FDL} conference, 2017. And as chapter 
+of the book \textit{Languages, Design Methods, and Tools for Electronic System 
+Design}, Springer, 2018.}
+\item{\textbf{``Distributed Event-Based Computing''}, published in the 
+\textit{ParCo} conference, 2017. And as book chapter of the book 
+\textit{Parallel Computing is Everywhere}, IOS Press BV, 2018.\newline}
+\textbf{Domains:} Programming languages, reconfigurable and high-performance 
+computing, many-core architectures.\newline
+\textbf{Summary:} Graphs are important in many applications, however their 
+analysis on conventional computer architectures is inefficient, because it 
+involves highly irregular access to memory when traversing vertices and edges. 
+Thus, we present a methodology for embedding graphs into silicon, where graph 
+vertices become finite state machines communicating via the graph edges. With 
+this approach many common graph analysis tasks can be performed by propagating 
+signals through the physical graph and measuring signal propagation time using 
+the on-chip clock distribution network. This eliminates the memory bottleneck 
+and allows thousands of vertices to be processed in parallel. Also, we present 
+a domain-specific language for graph description and transformation, and 
+demonstrate how it can be used to translate application graphs into an FPGA 
+board, where they can be analysed 1000x faster than on a conventional computer 
+cluster.
+\end{cvitems}
+}
+
+%------------------------------------------------
+\rule{8cm}{0.5pt}\vspace{-3mm}
+\cventry
+{}
+{}
+{}
+{}
+{
+\begin{cvitems}
+\item{\textbf{``Process Windows''}, ACSD conference, 2017\newline}
+\textbf{Domains:} formal modelling, concurrency, inter-process 
+communication.\newline
+\textbf{Summary:} We describe a method for formally representing the behaviour 
+of complex processes by \textit{process windows}. Each window covers a part of 
+the system behaviour, i.e. a part of the underlying transition system, and is 
+easier to understand and analyse than the complete transition system. Process 
+windows can overlap and have shared states and transitions so that the complete 
+system behaviour is the union of window behaviours. We demonstrate the 
+advantage of such representations when dealing with complex system behaviours, 
+and discuss potential applications in circuit design and process mining.
+\iffalse
+\newline
+\hspace{+4mm}As a motivational example we consider the problem of covering
+transition systems by marked graphs, or more generally choice-free Petri nets. 
+The obtained windows correspond to choice-free behavioural scenarios of the 
+system, wherein one window can take over, or wake up, after another window has 
+become inactive. The corresponding wake-up conditions and wake-up markings can 
+be derived automatically.
+\fi
+\end{cvitems}
+}
+
+\iffalse
+%------------------------------------------------
+\rule{8cm}{0.5pt}\vspace{-3mm}
+\cventry
+{}
+{}
+{}
+{}
+{
+\begin{cvitems}
+\item{\textbf{``Prototyping Resilient Processing Cores in Workcraft''}, 
+\textit{Resiliency in Embedded Electronic Systems} workshop, 2017.\newline}
+\textbf{Domains:} EDA, embedded systems, resilient computing.\newline
+\textbf{Abstract:} We present a methodology for the design and fast prototyping 
+of processing cores with resilient microarchitecture. The resilience is 
+achieved by equipping the core with a family of datapath components optimised  
+for different operating modes and a flexible control structure that allows to  
+change an instruction implementation at runtime depending on current conditions 
+and application requirements. We use asynchronous design techniques to  achieve 
+short-term resilience, i.e. survival in extreme environmental conditions, such  
+as near-threshold or unstable voltage supply. Long-term resilience is achieved 
+through runtime reconfiguration of the processor microarchitecture, which is 
+essential for safety-critical applications that cannot be taken offline for  
+maintenance, such as biomedical implants. By using formal methods one can 
+guarantee the correctness and uninterrupted service during such runtime  
+reconfigurations.
+\iffalse
+The presented methodology is supported by open-source  tool WORKCRAFT, and has 
+been validated by fabricating two ASICs: an Intel 8051  processing core and a 
+reconfigurable dataflow accelerator. To facilitate fast  prototyping of 
+resilient processing cores, we introduce a domain-specific  language for their 
+formal specification, software-level simulation and hardware synthesis.
+\fi
+\end{cvitems}
+}
+\fi
+
+\end{cventries}

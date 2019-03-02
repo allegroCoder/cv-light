@@ -1,0 +1,51 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[11pt, a4paper]{awesome-cv}
+
+\usepackage{hyperref}
+\usepackage{color}
+\geometry{left=2.5cm, top=1.1cm, right=2.5cm, bottom=2.3cm, footskip=.5cm}
+
+\fontdir[fonts/]
+
+% Color for highlights
+\colorlet{awesome}{awesome-red} % awesome-emerald, awesome-skyblue, 
+%awesome-red, awesome-pink, awesome-orange, awesome-nephritis, 
+%awesome-concrete, awesome-darknight
+%\definecolor{awesome}{HTML}{CA63A8}
+
+\definecolor{lighttext}{HTML}{414141}
+\definecolor{myblue}{HTML}{0000FF}
+
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+\newcommand*\profLogo{\includegraphics[scale=0.0047]{profile-logo.pdf}$\;$}
+
+
+\name{\Large{Alessandro}}{\Large{de Gennaro}\vspace{+2mm}}
+\address{\textbf{Date of Birth}: 1$^{st}$ March 1990 - \textbf{Address}: 
+Grenoble (France) - \textbf{Nationality}: Italian }
+
+\mobile{(+33) 07 83 92 70 33}
+\email{a.de-gennaro@ncl.ac.uk}
+\github{allegroCoder}
+%\extrainfo{\href{https://www.ncl.ac.uk/engineering/staff/profile/alessandrode-gennaro.html}{\profLogo
+% Web-profile}}
+
+\makecvfooter{\today}{Curriculum vitae}{\thepage}
+
+\begin{document}
+\pagenumbering{gobble}
+\makecvheader
+
+\input{sections/experience.tex}
+\input{sections/education.tex}
+\input{sections/side-projects.tex}
+\input{sections/certificates.tex}
+\input{sections/programming.tex}
+\input{sections/others.tex}
+\input{sections/publications.tex}
+\input{sections/references.tex}
+\input{sections/further-info.tex}
+
+\end{document}
